@@ -1,0 +1,109 @@
+<html>
+<head>
+  {{>head}}
+
+  <style>
+ .vl {
+  border-left: 4px solid white;
+  height: 50px;
+ }
+.bg {
+  background-color:pink;
+}
+</style>
+ </head>
+ <body class="bg">
+
+<nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
+<a class="navbar-brand" href="#"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="comic sans ms"> Jatin Travels </font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+ <div class="vl"></div> &nbsp; &nbsp; &nbsp;
+ <ul class="navbar-nav"> 
+   <li class="nav-item">
+   <a class="nav-link text-light" href="../"> Home </a> 
+   </li>
+   <li class="nav-item">
+    <a class="nav-link text-light bg-primary" href="../trip"> Trip Details </a> 
+   </li>
+   <li class="nav-item">
+    <a class="nav-link text-light" href="../about"> About Transports</a> 
+   </li>
+   <li class="nav-item"> 
+    <a class="nav-link text-light" href="../cancel"> Cancelled Trip </a> 
+   </li>
+   <li class="nav-item"> 
+    <a class="nav-link text-light " href="../update"> Updated Trip </a> 
+   </li>
+ </ul>
+ </nav>
+<br> <br> <br>
+
+    <center> {{>header}}</center>
+ <br>
+ <div class="container">
+        <h3> Journey Details : </h3>
+        <table class="table table-hover table-bordered  table-dark">
+         <tr align="center"> 
+            <th> Booking ID </th>
+            <th> Passenger Name </th>
+            <th> From</th>
+            <th> Place to Visit </th>
+            <th> Transport Name </th>
+            <th> Date of Travel </th>
+            <th> Time </th>
+            
+             </tr>
+        <tr  align="center">
+            <td> 2020AF101 </td>
+            <td> {{ p_name }} </td>
+            <td> {{ from }} </td>
+            <td> {{ visit }} </td>
+            <td>Punjab Roadways</td>
+            <td> {{ date }} </td>
+            <td> {{ time }} </td>
+            
+            
+            
+        </tr>
+    </table>
+
+  
+   <h3> Return Journey Details : </h3>
+        <table class="table table-bordered table-dark table-striped">
+         <tr  align="center"> 
+            <th> Booking ID </th>
+            <th> Passenger Name </th>
+            <th> From </th>
+            <th> To </th>
+            <th> Transport name </th>
+            <th> Date of Travel </th>
+            <th> Time </th>
+            
+            
+            
+        </tr>
+    <tr align="center">
+            <td> 2020AF101 </td>
+            <td> {{ p_name }} </td>
+            <td> {{ visit}} </td>
+            <td> {{ from }} </td>
+            <td>Punjab Roadways</td>
+            <td>16 July 2020 </td>
+            <td> 04:15 PM </td>
+            
+            
+            
+        </tr>
+
+    </table>
+
+   
+
+
+
+
+<br>
+       <center> {{>footer}} </center>
+
+    </body>
+</html>
